@@ -1,3 +1,5 @@
+//Closures
+
 const createHelloWorld = () => () => 'Hello World';
 
 const callHelloWorld = createHelloWorld();
