@@ -10,4 +10,3 @@ function multiply (x) {
 }
 
 const cancel=cancellable(multiply, [2], 3000);
-console.log(cancel)
