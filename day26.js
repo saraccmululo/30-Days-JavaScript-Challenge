@@ -6,11 +6,11 @@ var flat = function (arr, n) {
     let result = [];
 
     // Loop through each element in the input array
-    for (let item of arr) {
+    for (const item of arr) {
         // If item is an array, and we still have depth left to flatten
         if (Array.isArray(item)) {
             // Recursively flatten this item, reducing depth by 1
-            const flattenedItem = flatten(item, n - 1);
+            const flattenedItem = flat(item, n - 1);
 
             // Spread the flattened item into result
             result.push(...flattenedItem);
